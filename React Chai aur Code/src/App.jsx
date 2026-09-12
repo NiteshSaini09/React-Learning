@@ -1,7 +1,9 @@
 import './App.css'
-function App() {
+import Sample from './sample'
+function App(){
   return (
     <>
+      <Sample/>
       <h1>React is Learning By Nitesh</h1>
     </>
   )
