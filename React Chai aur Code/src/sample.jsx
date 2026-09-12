@@ -1,7 +1,10 @@
+
+
 function Details(user) {
+
   return (
     <>
-      <h1>{user.name}</h1>
+      <p>{user.name}</p>
       <p>{user.age}</p>
     </>
   );
@@ -20,7 +23,7 @@ function Sample() {
       <Details name="Mahendra" age="28"></Details>
       <div>
         {products.map((product) => (
-          <h1 key={product.id}>{product.name}</h1>
+          <p key={product.id}>{product.name}</p>
         ))}
       </div>
       <div>
