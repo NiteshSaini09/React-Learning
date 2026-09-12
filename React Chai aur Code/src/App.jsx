@@ -5,6 +5,9 @@ function App(){
     <>
       <Sample/>
       <h1>React is Learning By Nitesh</h1>
+      <Sample/>
+      <h1>React is Learning By Nitesh</h1>
+      <Sample/>
     </>
   )
 }
