@@ -15,7 +15,7 @@ let products = [
   { id: 2, name: "Mouse" },
   { id: 3, name: "Laptop" },
 ];
-let elements = [<h1>I am h1</h1>, <h2>i am h2</h2>, <p>i am p</p>, <hr />];
+let elements = [<h1>I am h1</h1>, <h2>i am h2</h2>, <p>i am p</p>];
 
 function Sample() {
   return (
