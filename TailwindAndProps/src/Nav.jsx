@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-export default function NavHorizontal() {
+export default function NavHorizontal(props) {
+  console.log(props)
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
@@ -23,7 +24,7 @@ export default function NavHorizontal() {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <h2 className="text-xl font-bold text-gray-900 dark:text-white">
-                  Brand
+                  {props.data.brand}
                 </h2>
               </div>
               <div className="hidden md:ml-6 md:flex md:space-x-8">
