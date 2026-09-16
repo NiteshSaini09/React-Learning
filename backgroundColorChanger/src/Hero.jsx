@@ -70,7 +70,7 @@ export default function HeroSaaS2() {
 
           <div className="order-1 lg:order-2 relative">
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl blur-2xl opacity-20"></div>
+              <div className="absolute -inset-4 bg-linear-to-r from-blue-600 to-purple-600 rounded-3xl blur-2xl opacity-20"></div>
               <div className="relative bg-white dark:bg-zinc-900 rounded-2xl shadow-2xl p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
