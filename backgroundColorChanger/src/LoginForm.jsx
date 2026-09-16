@@ -45,7 +45,7 @@ export default function HeroSection9() {
               </div>
             </div>
           </div>
-          <button className="my-5 w-[300px] rounded-xl bg-[#EA454C] py-2 text-white">
+          <button className="my-5 w-75 rounded-xl bg-[#EA454C] py-2 text-white">
             Sign in
           </button>
         </div>
