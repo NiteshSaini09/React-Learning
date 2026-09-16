@@ -9,7 +9,7 @@ export default function HeroSaaS2() {
   ];
 
   return (
-    <section className="relative w-full h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-black dark:via-zinc-900 dark:to-blue-900/10">
+    <section className="relative w-full h-screen bg-linear-to-br from-gray-50 via-white to-blue-50 dark:from-black dark:via-zinc-900 dark:to-blue-900/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
@@ -21,7 +21,7 @@ export default function HeroSaaS2() {
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
               Scale Your
               <br />
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
                 Business
               </span>
               <br />
