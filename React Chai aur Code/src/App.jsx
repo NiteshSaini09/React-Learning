@@ -1,4 +1,5 @@
 import './App.css'
+import Counter from './Counter.jsx'
 import ProductList from './ProductList.jsx'
 import Sample from './sample'
 let products=[
@@ -11,7 +12,8 @@ function App(){
   return (
     <>
       {/* <Sample/> */}
-      <ProductList products={products}/>
+      {/* <ProductList products={products}/> */}
+      <Counter/>
     </>
   )
 }

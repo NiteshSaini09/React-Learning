@@ -7,5 +7,4 @@ function Color({colorName,setColor}){
         </span>
     )
 }
-
 export default Color
