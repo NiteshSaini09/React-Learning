@@ -11,6 +11,7 @@ function ColorTab({setColor}){
             <Color colorName="olive" setColor={setColor}/>
             <Color colorName="purple" setColor={setColor}/>
             <Color colorName="orange" setColor={setColor}/>
+            <Color colorName="black" setColor={setColor}/>
         </div>
     )
 }
