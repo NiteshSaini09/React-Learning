@@ -1,10 +1,15 @@
+import { useState } from 'react'
+import heroImg from './assets/hero.png'
+import reactLogo from './assets/react.svg'
+import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
+  const [count, setCount] = useState(0)
 
   return (
    <>
-    <p>Hello</p>
+      <h1 className='text-white mt-4 text-2xl text-center'>Password Generator</h1>
    </>
   )
 }

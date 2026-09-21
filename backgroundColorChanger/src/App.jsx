@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="flex-1 w-screen" style={{backgroundColor:color}}>
         <HeroSaaS2/>
-      <div className="flex flex-col gap-20 mb-20">
+      <div className="flex flex-col gap-20 mb-20 ">
         <HeroSection9/>
         <ColorTab setColor={setColor}/>
       </div>
