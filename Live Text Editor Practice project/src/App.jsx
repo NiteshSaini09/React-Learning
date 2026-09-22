@@ -14,6 +14,7 @@ function App() {
     value={text}
     ></textarea>
     <button className='border mt-2 max-w-30 rounded-lg px-5 py-2 bg-blue-900 cursor-pointer' onClick={(e)=>setText(text.toUpperCase())}>UpperCase</button>
+    <button className='border mt-2 max-w-30 rounded-lg px-5 py-2 bg-blue-900 cursor-pointer' onClick={(e)=>setText(text.toLowerCase())}>LowerCase</button>
     <h5>Your Text : {text}</h5>
     <h5>Your Text Length:{text.length}</h5>
     <h5>Words: {words}</h5>
