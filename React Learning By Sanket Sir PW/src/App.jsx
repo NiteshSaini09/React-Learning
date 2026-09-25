@@ -1,19 +1,15 @@
-import './App.css'
-function Title(){
-  return (
-    <>
-      <h1>Hello </h1>
-      <h1>This is Title  </h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quis quibusdam, placeat suscipit, nisi consectetur, rem corporis a repellendus architecto laboriosam expedita facilis beatae dolorum alias ipsum sapiente modi quod?</p>
-    </>
-  )
-}
+import "./App.css";
+import Card from "./components/Card";
 function App() {
   return (
     <>
-      
+      <div className="flex justify-around mt-10">
+        <Card title="Buterfly" desc="Buterfly can fly"/>
+        <Card title="Spidermen" desc="Spidermen also can fly" img="https://cdn-imgix.headout.com/tour/19364/TOUR-IMAGE/a0f87f7e-434d-4c3c-9584-f7ee351d5f64-10432-dubai-img-worlds-of-adventure---uae-resident-offer-01.jpg?auto=compress%2Cformat&w=510.8727272727273&h=401.4&q=90&ar=14%3A11&crop=faces&fit=crop"/>
+        <Card />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
