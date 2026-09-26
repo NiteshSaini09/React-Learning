@@ -3,6 +3,7 @@ import "./App.css";
 import Card from "./components/Card";
 import Name from "./components/Name";
 import Counter from "./components/Counter";
+import Edit from "./components/ConditionalRendar";
 function App() {
   
   return (
@@ -17,6 +18,7 @@ function App() {
           <h1>This is passed JSX</h1>
       </Name>
       <Counter/>
+      <Edit/>
     </>
   );
 }

@@ -2,14 +2,17 @@ import { useState } from "react";
 
 function Counter() {
   let [count, setCount] = useState(0);
+  let [edit,setEdit]=useState(false)
   let inc = () => {
     setCount(count + 1);
   };
   let dec = () => {
     if (count >= 1) setCount(count - 1);
   };
+
   return (
     <>
+    
       <h1>{count}</h1>
       <h3>
         {count} is an {count % 2 == 0 ? "Even" : "Odd"}
