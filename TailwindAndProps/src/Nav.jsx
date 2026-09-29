@@ -14,15 +14,12 @@ export default function NavHorizontal(props) {
 
   return (
     <div className="p-8 w-full bg-white dark:bg-black">
-      {/* <p className="text-sm font-semibold text-gray-900 dark:text-white mb-6">
-        Horizontal Navigation
-      </p> */}
 
       <nav className="bg-white dark:bg-black border border-gray-200 dark:border-zinc-800 rounded-lg shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <h2 className="text-xl font-bold text-gray-900 dark:text-white">
                   {props.data.brand}
                 </h2>
