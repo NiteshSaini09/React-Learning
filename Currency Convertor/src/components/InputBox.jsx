@@ -18,9 +18,9 @@ function InputBox({
         <label htmlFor={amountInputID} className="text-black/40 mb-2 inline-block">{label}</label>
         <input
           id={amountInputID}
-          className="outline-none w-full bg-transparent py-1.5"
+          className="outline-none w-full bg-transparent py-1.5 text-black"
           type="number"
-          placeholder="Amount"
+          placeholder="Enter Amount"
           disabled={amountDesable}
           value={amount}
           onChange={(e) =>
