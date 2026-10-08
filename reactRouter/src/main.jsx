@@ -5,7 +5,7 @@ import Routing from './Routing.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Layout } from './Layout.jsx'
 import Home from './components/Home/Home.jsx'
-import { About } from './components/About/About.jsx'
+import About  from './components/About/About.jsx'
  const router=createBrowserRouter([
   { 
     path:'/',
