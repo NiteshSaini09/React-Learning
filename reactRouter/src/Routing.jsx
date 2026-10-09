@@ -6,6 +6,7 @@ import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterPro
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import User from './components/User/User'
+import Github from "./components/Github/Github";
 
 // const myAppRouter = createBrowserRouter([
 //   {
@@ -35,6 +36,7 @@ const myAppRouter=createBrowserRouter(
       <Route path="about" element={<About/>}/>
       <Route path="contact" element={<Contact/>}/>
       <Route path="user/:name" element={<User/>}/>
+      <Route path="github" element={<Github/>}/>
     </Route>
   )
 )
