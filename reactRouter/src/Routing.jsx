@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider } from "react-router-dom";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import User from './components/User/User'
 
 // const myAppRouter = createBrowserRouter([
 //   {
@@ -33,6 +34,7 @@ const myAppRouter=createBrowserRouter(
       <Route path="" element={<Home/>}/>
       <Route path="about" element={<About/>}/>
       <Route path="contact" element={<Contact/>}/>
+      <Route path="user/:name" element={<User/>}/>
     </Route>
   )
 )
