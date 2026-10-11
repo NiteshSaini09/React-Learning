@@ -7,12 +7,17 @@ import {
   createRoutesFromElements,
   Outlet,
   Route,
+  Router,
   RouterProvider,
 } from "react-router-dom";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import User from "./components/User/User";
-import Github, {gitInfoLoader}from "./components/Github/Github";
+import Github, { gitInfoLoader } from "./components/Github/Github";
+import Dashboard from "./AdminRoutes/Pages/Dashboard";
+import Orders from "./AdminRoutes/Pages/Orders";
+import Nav from "./AdminRoutes/Pages/Nav";
+import AdminFooter from "./AdminRoutes/Pages/Foot";
 
 // const myAppRouter = createBrowserRouter([
 //   {
@@ -35,31 +40,47 @@ import Github, {gitInfoLoader}from "./components/Github/Github";
 //   },
 // ]);
 
-const myAppRouter = createBrowserRouter(
+export const myAppRouter = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Schema />}>
+    <Route
+      path="/"
+      element={
+        <Schema
+          header={
+            window.location.pathname.startsWith("/admin") ? <Nav /> : <Header />
+          }
+          footer={
+            window.location.pathname.startsWith("/admin") ? (
+              <AdminFooter />
+            ) : (
+              <Footer />
+            )
+          }
+        />
+      }
+    >
       <Route path="" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="user/:name" element={<User />} />
-      <Route
-        loader={gitInfoLoader}
-        path="github"
-        element={<Github />}
-      />
+      <Route path="/admin" element={<Orders />}>
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="orders" element={<Orders />} />
+      </Route>
+      <Route loader={gitInfoLoader} path="github" element={<Github />} />
     </Route>,
   ),
 );
-function Schema() {
+function Schema({ header = <Header />, footer = <Footer /> }) {
   return (
     <>
-      <Header />
+      {header}
       <Outlet />
-      <Footer />
+      {footer}
     </>
   );
 }
-function App() {
+function Routing() {
   return (
     <>
       <RouterProvider router={myAppRouter} />
@@ -67,4 +88,4 @@ function App() {
   );
 }
 
-export default App;
+export default Routing;
