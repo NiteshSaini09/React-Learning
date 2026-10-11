@@ -63,10 +63,10 @@ export const myAppRouter = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="user/:name" element={<User />} />
-      <Route path="/admin" element={<Orders />}>
-        <Route path="dashboard" element={<Dashboard />} />
-        <Route path="orders" element={<Orders />} />
-      </Route>
+      <Route path="admin" element={<Dashboard />} />
+      <Route path="admin/orders" element={<Orders />} />
+      <Route path="admin/dashboard" element={<Dashboard />} />
+      {/* <Route path="/admin" element={<h1>Welcome</h1>}></Route> */}
       <Route loader={gitInfoLoader} path="github" element={<Github />} />
     </Route>,
   ),

@@ -9,6 +9,7 @@ const links = [
 return ( <nav className="bg-slate-900 text-white shadow-lg"> <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-4 sm:flex-row sm:items-center sm:justify-between"> <h1 className="text-2xl font-bold tracking-tight">
 Admin<span className="text-blue-400">Panel</span> </h1>
 
+```
     <div className="flex gap-2">
       {links.map((link) => (
         <NavLink
