@@ -62,6 +62,7 @@ export const myAppRouter = createBrowserRouter(
       <Route path="" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="location" element={<Contact />} />
       <Route path="user/:name" element={<User />} />
       <Route path="admin" element={<Dashboard />} />
       <Route path="admin/orders" element={<Orders />} />
