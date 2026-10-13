@@ -76,6 +76,7 @@ function Schema({ header = <Header />, footer = <Footer /> }) {
   return (
     <>
       {header}
+      <><h1>Hello this is our service</h1></>
       <Outlet />
       {footer}
     </>
