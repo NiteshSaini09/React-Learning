@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Prop from "./Prop";
 
 function App() {
   let [x, setX] = useState(0);
@@ -13,13 +14,20 @@ function App() {
     <div className="w-full h-screen bg-black text-white text-2xl p-2 flex flex-col items-center gap-5">
       <h1>{x}</h1>
       <div class="inline-flex gap-3">
-        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded" onClick={Inc}>
+        <button
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+          onClick={Inc}
+        >
           Increase
         </button>
-        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded" onClick={Dec}>
+        <button
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+          onClick={Dec}
+        >
           Decrease
         </button>
       </div>
+      <Prop data={{name:"Nitesh", age:18}}/>
     </div>
   );
 }
