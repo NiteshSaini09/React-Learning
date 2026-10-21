@@ -26,6 +26,9 @@ function Demo() {
         </button>
       </div>
       <Prop data={{ name: "Nitesh", age: 18 }} />
+      <Prop data={{ name: "Amit", age: 22 }} />
+      <Prop data={{ name: "Shubhankar", age: 32 }} />
+      <Prop data={{ name: "Vinod", age: 12 }} />
     </div>
   );
 }
