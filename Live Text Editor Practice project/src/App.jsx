@@ -20,6 +20,7 @@ function App() {
     <h5>Your Text Length:{text.trim().length}</h5>
     <h5>Words: {words}</h5>
     <p>Preview : {text}</p>
+    <p className='text-6xl'>Welcome Again</p>
 
   </>
   )
