@@ -30,6 +30,7 @@ function App() {
         <h1 className="text-2xl bold text-red-700">Convert Currency</h1>
         <p className="tracking-[2px]">{from.toUpperCase()} to {to.toUpperCase()}</p>
         <h1 className="text-4xl">Amount: {convertedAmount}</h1>
+        <h1 className="text-2xl">Thank You</h1>
       </div>
       <div
         className="w-1/2 flex flex-wrap  justify-center items-center bg-cover bg-no-repeat bg-transparent"
